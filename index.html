@@ -35,8 +35,17 @@
             </ul>
         </section>
         <section>
-            <h2>Contact Us</h2>
-            <p>Call us at <strong>(208) 555-1234</strong> or email <strong>service@rathdrumplumbing.com</strong></p>
+            <section>
+  <h2>Contact Us</h2>
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
+    <p><label>Your Name: <input type="text" name="name" required></label></p>
+    <p><label>Your Email: <input type="email" name="email" required></label></p>
+    <p><label>Your Message: <textarea name="message" required></textarea></label></p>
+    <p><button type="submit">Send Message</button></p>
+  </form>
+</section>
+
         </section>
     </main>
     <footer>
